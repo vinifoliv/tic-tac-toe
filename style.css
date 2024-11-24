@@ -1,0 +1,89 @@
+:root {
+    /* COLOR PALETTE */
+    --chocolate-cosmos: #561d25;
+    --caramel: #ce8147;
+    --flax: #ecdd7b;
+    --mindaro: #d3e298;
+    --tea-green: #cde7be;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: var(--flax);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    margin: 10vh auto;
+    background-color: snow;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--caramel);
+}
+
+.button-set {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-set > button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--caramel);
+    box-shadow: 0 3px 0 var(--chocolate-cosmos);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    transition: .25s;
+}
+.button-set > button:hover {
+    background-color: #B1682F; /* Shade of caramel */
+    color: #eee;
+}
+.button-set > button:active {
+    background-color: var(--chocolate-cosmos);
+    color: gray;
+}
+
+#grid {
+    margin-top: 3vh;
+    gap: 1vw;
+    width: 100%;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-cell {
+    border: 2px solid var(--chocolate-cosmos);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+.grid-cell:hover {
+    background-color: #ddd;
+}
+.grid-cell:active {
+    background-color: #aaa;
+}
+
+.grid-cell > span {
+    font-size: 6rem;
+}
